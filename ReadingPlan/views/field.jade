@@ -1,3 +1,8 @@
 div#wrap
-  h1 field
-
+  div#left
+    button.btn.category#ALL(onclick='viewFieldList(this.id)') ALL
+    button.btn.btn-primary.category#novel(onclick='viewFieldList(this.id)',draggable='true',onDragStart='dragStart(event)') novel
+    button.btn.btn-primary.category#poem(onclick='viewFieldList(this.id)',draggable='true',onDragStart='dragStart(event)') poem
+    button.btn.btn-primary#addField ADD
+  div#right
+    img(src='/images/trash-bin.jpg',title='abandon here!!',onDragOver='dragOver(event)',onDrop='dragDrop(event)')

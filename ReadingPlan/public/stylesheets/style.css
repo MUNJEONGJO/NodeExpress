@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Domine:700);
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -16,8 +18,15 @@ a {
 }
 
 door {
+	font-family: 'Domine', serif;
 	font-size: 100px;
 }
+
+door:hover {
+	color: #0044cc;		
+	-webkit-transition: color .2s ease-in .2s;
+}
+
 
 p {
 	margin-top: 200px;

@@ -1,4 +1,8 @@
 div#wrap
-  h1 year
-
-
+  div#left
+    button.btn.category#ALL(onclick='viewYearList(this.id)') ALL
+    button.btn.btn-primary.category#2013(onclick='viewYearList(this.id)') 2013
+    button.btn.btn-primary.category#2014(onclick='viewYearList(this.id)',draggable='true',onDragStart='dragStart(event)') 2014
+    button.btn.btn-primary#addYear ADD
+  div#right
+    img(src='/images/trash-bin.jpg',title='abandon here!!',onDragOver='dragOver(event)',onDrop='dragDrop(event)')
