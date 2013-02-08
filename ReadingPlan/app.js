@@ -36,5 +36,19 @@ app.get('/', function (request, response) {
 	});
 });
 
+app.get('/byYear', function (request, response) { 
+	response.render('year', {
+		title: 'Year page',
+		layout: 'layout_sub.jade'
+	});
+});
+
+app.get('/byField', function (request, response) { 
+	response.render('field', {
+		title: 'Field page',
+		layout: 'layout_sub.jade'
+	});
+});
+
 app.listen(3000);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);

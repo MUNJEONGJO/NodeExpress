@@ -1,8 +1,18 @@
 
 $(function() {
-	$("#a").click(function(){
+	$("#byyear").click(function(){
+
+		var url = "/byYear";
 			
-		alert('гого');
+		$(location).attr('href', url);
+
+	});
+
+	$("#byfield").click(function(){
+
+		var url = "/byField";
+			
+		$(location).attr('href', url);
 
 	});
 });
