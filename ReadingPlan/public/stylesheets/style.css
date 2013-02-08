@@ -6,3 +6,29 @@ body {
 a {
   color: #00B7FF;
 }
+
+#wrap {
+	position: relative;
+	width: 700px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 100px;
+}
+
+door {
+	font-size: 100px;
+}
+
+p {
+	margin-top: 200px;
+}
+
+button {
+	width: 150px;
+	height: 60px;
+}
+
+button.byyear {
+	margin-right: 50px;
+}
+
